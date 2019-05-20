@@ -36,3 +36,16 @@ function updateRent(bicyclerent) {
 	}
 
 }
+
+var bgcolor = [ 'white', '#ccffcc' ];
+var cnt=0;
+
+function btnBg() {
+	document.getElementById('bicyclerent').style.backgroundColor = bgcolor[cnt];
+	if (cnt == 0) {
+		cnt++;
+	}
+	else {
+		cnt--;
+	}
+}

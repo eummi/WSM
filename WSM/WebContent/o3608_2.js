@@ -4,7 +4,7 @@ window.onload = function() {
 
 function handleRefresh() {
 
-	var url = "http://openapi.seoul.go.kr:8088/416565744d6d657036374e536e4141/xml/TB_PUBLIC_BCYCL_LEND_USE/1/100/";
+	var url = "http://openapi.seoul.go.kr:8088/416565744d6d657036374e536e4141/xml/TB_PUBLIC_BCYCL_LEND_USE/2/10/";
 
 	var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -41,5 +41,17 @@ function updateRent(xml) {
 
 		bicycleDiv.appendChild(div);
 	}
+}
 
+var bgcolor = [ 'white', '#ccffcc' ];
+var cnt=0;
+
+function btnBg() {
+	document.getElementById('bicyclerent').style.backgroundColor = bgcolor[cnt];
+	if (cnt == 0) {
+		cnt++;
+	}
+	else {
+		cnt--;
+	}
 }

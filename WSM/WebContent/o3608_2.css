@@ -1,24 +1,17 @@
-/* lecture.css */
-
-body {
-	margin-left: 40px;
-	margin-right: 40px;
-}
 div#bicyclerent {
 	background-color: #ccffcc;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	margin: 10px 0px 0px 0px;
 	padding: 0px;
 	border: 1px solid #d9d9d9;
 }
 div.rent {
 	font-family: Verdana, Helvetica, sans-serif;
-	color: #0000ff;
+	color: #400080;
 	padding: 10px;
 }
-div.rent:nth-child(2n) {
-	background-color: #eeee00;
+div.rent:nth-child(even) {
+	background-color: #80ffff;
 }
 div.rent:first-child {
 	-webkit-border-top-left-radius: 6px;
